@@ -7,7 +7,7 @@ namespace Assignment_5_fr_ts_time
     {
         static void Main(string[] args)
         {
-            Part2();
+            Part3();
             //Maxym F
         }
         public static void Part1()
@@ -152,6 +152,152 @@ namespace Assignment_5_fr_ts_time
                 Console.WriteLine( + number1 + " / " + number2 + ",");
                 Console.WriteLine(  "=" +number1 / number2);
             }
+
+        }
+
+        public static void Part3()
+        {
+
+            //Quiz
+
+
+            string name, ans1, ans2, ans3, ans4;
+            int score;
+
+
+
+            Console.WriteLine("Hello, and Welcome to the WW2 Quiz Show!!!");
+
+            Console.WriteLine("So-What is your name, contestant?");
+            name = Console.ReadLine();
+
+            Console.WriteLine();
+
+            Console.WriteLine(" Well, hello, " + name + "! Lets start this quiz! Every question will be in a True Or False format. Ready? Lets storm the           beaches!");
+
+            Console.WriteLine("Ok, then! Question 1: True or False-The Normandy Landings were meant for June 5th, 1944, but postponed to June 6th due      to poor weather conditions.");
+
+            ans1 = Console.ReadLine().ToLower();
+            score = 0;
+
+            Console.WriteLine();
+
+            if (ans1 == "true" || ans1 == "t")
+            {
+                Console.WriteLine("Nice one!");
+
+                score += 1;
+            }
+
+            else if (ans1 == "false" || ans1 == "f")
+            {
+                Console.WriteLine("Oh, darn! Unfortunatly for you, this WAS true.");
+                
+;           }
+
+            else
+            {
+                 Console.WriteLine("How about you try next time.");
+            }
+            
+            Console.WriteLine("Question 2! True or False-WW2 ended in 1944.");
+            ans2 = Console.ReadLine().ToLower();
+
+            Console.WriteLine();
+
+            if (ans2 == "true" || ans2 == "t")
+            {
+                Console.WriteLine("Unfortunatly for you, you were wrong. WW2 ended in 1945.");
+            }
+
+            else if (ans2 == "false" || ans2 == "f")
+            {
+                Console.WriteLine("Nice one!");
+                score += 1;
+            }
+
+            else
+            {
+                Console.WriteLine("Invalid Aswer");
+            }
+            
+            Console.WriteLine();
+            
+            Console.WriteLine("Question 3: True or False-Germany had the most loss of men in WW2");
+            ans3 = Console.ReadLine().ToLower();
+            
+            if (ans3 == "true" || ans3 == "t")
+            {
+                Console.WriteLine("False. The Soviet Union lost the most soldiers during WW2.");
+            }
+
+            else if (ans3 == "false" || ans3 == "f")
+            {
+                Console.WriteLine("Correct! Mr. Smartypants right here!");
+                score += 1;
+            }
+
+            else
+            {
+                 Console.WriteLine("Too scared to try?");
+            }
+            Console.WriteLine("Final Question. True or False-Future president, John F. Kennedy served in the Pacific theatre during WW2. His PT boat          would be sunk by the Japanese.");
+            ans4 = Console.ReadLine().ToLower();
+
+            Console.WriteLine();
+            
+            if (ans4 == "true" || ans4 == "t")
+            {
+                Console.WriteLine("Nice!");
+                score += 1;
+            }
+
+            else if (ans4 == "false" || ans4 == "f")
+            {
+                Console.WriteLine("Ouch! Hey, I didn't expect you to get that, but look into it. It's crazy!");
+            }
+
+            else 
+            {
+                Console.WriteLine("I understand why you wouldn't answer this question, but try next time.");
+            }
+
+            if (score == 4) 
+            {
+                Console.WriteLine("Congrats, " + name + "! 4 out of 4 is great! You are a certified history buff!");
+            }
+
+            if (score == 3) 
+            {
+                Console.WriteLine("Nice one, " + name + "! 3 out of 4 is great. The JFK one got you, didn't it?");
+            }
+
+            if (score == 2) 
+            {
+                Console.WriteLine("Ok, " + name + ", 2 out of 4 is still a pass. You'll get 'em all next time!");
+            }
+
+            if (score == 1) 
+            {
+                Console.WriteLine("Damn, " + name + "... Unfortunatly, 1 out of 4 is a fail.");
+            }
+
+            if (score == 0) 
+            {
+                Console.WriteLine("Wow, " + name + ". 0 out of 4... Did you even try?");
+            }
+
+            
+            
+           
+            
+            
+
+            
+
+
+
+
 
         }
     }
