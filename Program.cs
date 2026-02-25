@@ -264,27 +264,27 @@ namespace Assignment_5_fr_ts_time
 
             if (score == 4) 
             {
-                Console.WriteLine("Congrats, " + name + "! 4 out of 4 is great! You are a certified history buff!");
+                Console.WriteLine("Congrats, " + name + "! 4 out of 4 is great! 100%! You are a certified history buff!");
             }
 
             if (score == 3) 
             {
-                Console.WriteLine("Nice one, " + name + "! 3 out of 4 is great. The JFK one got you, didn't it?");
+                Console.WriteLine("Nice one, " + name + "! 3 out of 4 is pretty good-75%. The JFK one got you, didn't it?");
             }
 
             if (score == 2) 
             {
-                Console.WriteLine("Ok, " + name + ", 2 out of 4 is still a pass. You'll get 'em all next time!");
+                Console.WriteLine("Ok, " + name + ", 2 out of 4 is still a pass-50%. You'll get 'em all next time!");
             }
 
             if (score == 1) 
             {
-                Console.WriteLine("Damn, " + name + "... Unfortunatly, 1 out of 4 is a fail.");
+                Console.WriteLine("Damn, " + name + "... Unfortunatly, 1 out of 4, 25% is a fail.");
             }
 
             if (score == 0) 
             {
-                Console.WriteLine("Wow, " + name + ". 0 out of 4... Did you even try?");
+                Console.WriteLine("Wow, " + name + ". 0 out of 4... 0%. Did you even try?");
             }
 
             
